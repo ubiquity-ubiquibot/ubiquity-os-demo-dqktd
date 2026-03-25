@@ -1,0 +1,44 @@
+plugins:
+  ubiquity-os-marketplace/command-start-stop@demo:
+    with:
+      taskAccessControl:
+        experience:
+          priorityThresholds:
+            - label: "Priority: 0 (Regression)"
+              minimumXp: 0
+            - label: "Priority: 1 (Normal)"
+              minimumXp: 0
+            - label: "Priority: 2 (Medium)"
+              minimumXp: 0
+            - label: "Priority: 3 (High)"
+              minimumXp: 0
+            - label: "Priority: 4 (Urgent)"
+              minimumXp: 0
+            - label: "Priority: 5 (Emergency)"
+              minimumXp: 0
+  ubiquity-os/command-demo@demo: null
+  ubiquity-os-marketplace/command-wallet@demo: null
+  ubiquity-os-marketplace/command-query@demo: null
+  ubiquity-os-marketplace/text-conversation-rewards@demo:
+    with:
+      incentives:
+        collaboratorOnlyPaymentInvocation: false
+        contentEvaluator: {}
+        userExtractor: {}
+        dataPurge: {}
+        formattingEvaluator: {}
+        payment: {}
+        githubComment: {}
+        reviewIncentivizer: {}
+        simplificationIncentivizer: {}
+        externalContent: {}
+      payment:
+        automaticTransferMode: false
+      rewards:
+        erc20RewardToken: "0x4F35e5C4D233f0cA201B3FFc006c29f6CefD1Fe7"
+        evmPrivateEncrypted: "aoGFwA89ZRX0PlE0ybfAN13Zfaml3Jh09TJoQThyFHqbE5iFBWIYYIRrwlvGoSXPIlqRSqxPMJRYeUOPPwy0AbuOHpm09RaYrlvow2utzom7fI2-wUwr2FJ_EDY6FCAtr5XbxiiTflENalUUu8BE7csDC67k6Cjb5THIKy-YiLAlw6jHTw"
+        evmNetworkId: 100
+  ubiquity-os-marketplace/daemon-disqualifier@demo: null
+  ubiquity-os-marketplace/text-vector-embeddings@demo:
+    with:
+      demoFlag: true
